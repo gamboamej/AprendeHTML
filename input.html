@@ -1,0 +1,451 @@
+<!-- 
+Programa de Aprendizaje de HTML5.
+Desarrollador: Elvis Gamboa Machado @gamboamej
+Licencia: Licencia GNU GPL (Licencia Pública General de GNU).
+Empresa: Pratapo, C.A
+Hecho con amor en Venezuela.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Bootstrap core CSS -->
+      <link href="./bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <title>&lt;input&gt;</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="./img/HTML5Logo.svg" width="30" height="30" alt="">
+    </a>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">indice <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div id="inicio" class="container">
+    <div class="row mt-5 mb-5">
+      <div class="col-md-4 offset-md-4">
+        <img src="./img/HTML5Logo.svg" alt="HTML5">
+      </div>
+    </div>
+    <div class="row mt-5 mb-5">
+        <div class="col-12">
+            <p id="form"><b>&lt;input&gt;</b></p>
+            <p>Etiqueta de apertura y cierre de un formulario de una página web. El resto de etiquetas de formulario deben ir siempre recogidas entre estas etiquetas de apertura y cierre de formulario.</p>
+            <p><b>Uso:</b></p>
+            <p><code>&lt;input&gt;</code></p>
+            <p><b>Atributos:</b>
+            </p>
+            <p class="text-success">
+            <a class="btn btn-success m-1" href="#accept">accept</a>
+            <a class="btn btn-success m-1" href="#alt">alt</a>
+            <a class="btn btn-success m-1" href="#autocomplete">autocomplete</a>
+            <a class="btn btn-success m-1" href="#autofocus">autofocus</a>
+            <a class="btn btn-success m-1" href="#checked">checked</a>
+            <a class="btn btn-success m-1" href="#dirname">dirname</a>
+            <a class="btn btn-success m-1" href="#disabled">disabled</a>
+            <a class="btn btn-success m-1" href="#form">form</a>
+            <a class="btn btn-success m-1" href="#formaction">formaction</a>
+            <a class="btn btn-success m-1" href="#formenctype">formenctype</a>
+            <a class="btn btn-success m-1" href="#formmethod">formmethod</a>
+            <a class="btn btn-success m-1" href="#formnovalidate">formnovalidate</a>
+            <a class="btn btn-success m-1" href="#formtarget">formtarget</a>
+            <a class="btn btn-success m-1" href="#height">height</a>
+            <a class="btn btn-success m-1" href="#list">list</a>
+            <a class="btn btn-success m-1" href="#max">max</a>
+            <a class="btn btn-success m-1" href="#maxlength">maxlength</a>
+            <a class="btn btn-success m-1" href="#min">min</a>
+            <a class="btn btn-success m-1" href="#minlength">minlength</a>
+            <a class="btn btn-success m-1" href="#multiple">multiple</a>
+            <a class="btn btn-success m-1" href="#name">name</a>
+            <a class="btn btn-success m-1" href="#pattern">pattern</a>
+            <a class="btn btn-success m-1" href="#placeholder">placeholder</a>
+            <a class="btn btn-success m-1" href="#readonly">readonly</a>
+            <a class="btn btn-success m-1" href="#required">required</a>
+            <a class="btn btn-success m-1" href="#size">size</a>
+            <a class="btn btn-success m-1" href="#src">src</a>
+            <a class="btn btn-success m-1" href="#step">step</a>
+            <a class="btn btn-success m-1" href="#type">type</a>
+            <a class="btn btn-success m-1" href="#value">value</a>
+            <a class="btn btn-success m-1" href="#width">width</a>
+            </p>
+            <p><b>Etiqueta de Cierre: </b> <span class="text-danger">No Aplica.</span></p>
+            <p><b>Posicion:</b> Dentro de la etiqueta <b>&lt;body&gt;</b> y dentro de <b>&lt;form&gt;</b><span class="text-danger"> (Recomendado)</span></p>
+           
+            <p><b>Codigo:</b></p>
+            <p>
+              <code>&lt;form target="_self" action="datos.php" method="post"&gt;<br>
+                <b>nombre:&lt;input type="text" name="nombre" id="nombre" required&gt;</b><br>
+                &lt;button type="submit"&gt;Guardar&lt;/button&gt;<br>
+                  &lt;/form&gt;
+              </code>
+              </p>
+          <!--Codigo en funcionamiento-->
+          <p><b>Vista en el navegador:</b></p>
+          <form target="_self" action="datos.php" method="post">
+            nombre:<input type="text" name="nombre" id="nombre" required>
+            <button type="submit">Guardar</button>
+            </form>
+
+        <!--   <form class="row" target="_self" action="datos.php" method="post">
+            <div class="form-group col-sm-12 col-lg-3">
+             <input type="button" class="btn btn-primary" value="Click" onclick="msg()">
+           </div>
+           <div class="form-group col-sm-12 col-lg-3">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+              <label class="form-check-label" for="vehicle1"> I have a bike</label><br>
+            </div>
+           </div>
+           <div class="form-group col-sm-12 col-lg-3">
+            <label for="exampleColorInput" >Color:</label>    
+            <input class="form-control" type="color" value="#563d7c" title="Seleccione un color">
+           </div>
+           <div class="form-group col-sm-12 col-lg-3">
+            <label for="exampleColorInput" >Fecha:</label>    
+            <input class="form-control" type="date">
+           </div>
+           <div class="form-group col-sm-12 col-lg-3">
+            <label for="exampleColorInput"> Hora:</label>    
+            <input class="form-control" type="datetime-local">
+           </div>
+           <div class="form-group col-sm-12 col-lg-3">
+            <label for="exampleColorInput">Correo:</label>    
+            <input class="form-control" type="email">
+           </div>
+           <div class="form-group col-sm-12 col-lg-3">
+            <label for="exampleColorInput">Avatar:</label>    
+            <input class="form-control" type="file">
+           </div>
+           <div class="form-group col-sm-12 col-lg-3">
+            <label for="id" >Hidden:</label>    
+            <input id="id" name="id" type="hidden" value="1">
+           </div>
+           <div class="form-group col-sm-12 col-lg-3">
+            <label for="">Foto:</label>
+            <input class="form-control" type="image" src="./img/HTML5Logo.svg" alt="HTML" width="48" height="48">
+           </div>
+           <div class="form-group col-sm-12 col-lg-3">
+            <label for="">Mes:</label>
+            <input class="form-control" type="month">
+           </div>
+           <div class="form-group col-sm-12 col-lg-3">
+            <label for="">Edad:</label>
+            <input class="form-control" type="number">
+           </div>
+           <div class="form-group col-sm-12 col-lg-3">
+            <label for="clave">Clave:</label>
+            <input class="form-control" id="clave" type="password">
+           </div>
+           <div class="col-sm-12 col-lg-3">
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="customRadioInline2" name="customRadioInline" class="custom-control-input">
+              <label class="custom-control-label" for="customRadioInline2">Abierto</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="customRadioInline1" name="customRadioInline" class="custom-control-input">
+              <label class="custom-control-label" for="customRadioInline1">Cerrado</label>
+            </div>
+           </div>
+           <div class="form-group col-sm-12 col-lg-3">
+            <label for="points">Puntos</label>
+            <input type="range" class="custom-range" type="range" id="points" name="points" min="0" max="100">
+           </div>
+           <div class="form-group col-sm-12 col-lg-3">
+                 <input class="btn btn-success" type="reset" value="reset">
+           </div>
+           <div class="form-group col-sm-12 col-lg-3">
+            <label for="gsearch">Buscar:</label>
+           <input class="form-control" type="search" id="gsearch" name="gsearch">
+      </div>
+
+      <div class="form-group col-sm-12 col-lg-3">
+        <input class="btn btn-success" type="submit" value="enviar">
+  </div>
+  <div class="form-group col-sm-12 col-lg-3">
+    <label for="phone">Telefono:</label>
+    <input class="form-control" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+</div>
+
+<div class="form-group col-sm-12 col-lg-3">
+    <label for="nombre">Nombre:</label>
+    <input class="form-control" type="text" id="nombre" name="nombre">
+</div>
+
+<div class="form-group col-sm-12 col-lg-3">
+    <label for="tiempo">Hora:</label>
+    <input class="form-control" type="time" id="tiempo" name="tiempo">
+</div>
+
+<div class="form-group col-sm-12 col-lg-3">
+    <label for="homepage">URL:</label>
+    <input class="form-control" type="url" id="homepage" name="homepage">
+</div>
+
+<div class="form-group col-sm-12 col-lg-3">
+    <label for="semana">Semana:</label>
+    <input class="form-control" type="week" id="semana" name="semana">
+</div>
+</form> -->
+            <br>
+          <!--Fin Codigo en funcionamiento--> 
+          <p><a href="#form">subir</a></p>
+          <hr>
+            <h2>Atributos</h2>
+            <h3 id="accept-charset">accept-charset</h3>
+            <p><b>accept-charset</b> este atributo especifica la codificación de caracteres que se van a utilizar para el envío de formularios.</p>
+            <p><b>Codigo:</b></p>
+            <p>
+              <code>
+              &lt;form accept-charset="UTF-8"&gt;<br>
+              Nombre:&lt;input type="text" name="nombre" required&gt;<br>
+              Apellido:&lt;input type="text" name="apellido" required&gt;<br>
+              &lt;input type="submit" value="Enviar"&gt;<br>
+              &lt;/form&gt;
+            </code>
+          </p>
+          <!--Codigo en funcionamiento-->
+          <p><b>Vista en el navegador:</b></p>
+          <form accept-charset="UTF-8">
+            Nombre:<input type="text" name="nombre" required>
+            Apellido:<input type="text" name="apellido" required>
+            <input type="submit" value="Enviar">
+            </form> 
+            <br>
+          <!--Fin Codigo en funcionamiento--> 
+          <p><a href="#form">subir</a></p>
+          <hr>
+            <h3 id="action">action</h3>
+            <p><b>action</b> este atributo especifica dónde enviar los datos del formulario cuando se envía un formulario.</p>
+            <h5>Variaciones de uso</h5>
+            <ul>
+              <li><span class="text-success">Una URL absoluta: apunta a otro sitio web (action="http://www.pratapo.com/desdecasa.html")</span></li>
+              <li><span class="text-success">Una URL relativa: apunta a un archivo dentro de un sitio web (action="guarda.php")</span></li>
+            </ul>
+            <p><b>Codigo:</b></p>
+            <p>
+              <code>
+              &lt;form action="datos.php" target="_blank"&gt;<br>
+              Nombre:&lt;input type="text" name="nombre" required&gt;<br>
+              Apellido:&lt;input type="text" name="apellido" required&gt;<br>
+              &lt;input type="submit" value="Enviar"&gt;<br>
+              &lt;/form&gt;
+            </code>
+          </p>
+          <!--Codigo en funcionamiento-->
+          <p><b>Vista en el navegador:</b></p>
+          <form action="datos.php" target="_blank">
+            Nombre:<input type="text" name="nombre" required>
+            Apellido:<input type="text" name="apellido" required>
+            <input type="submit" value="Enviar">
+            </form> 
+            <br>
+          <!--Fin Codigo en funcionamiento--> 
+          <p><a href="#form">subir</a></p>
+          <hr>
+            <h3 id="autocomplete">autocomplete</h3>
+            <p><b>autocomplete</b> este atributo especifica si un campo de entrada debe tener habilitado el autocompletado.</p>
+            <p>Autocompletar permite que el navegador prediga el valor. Cuando un usuario comienza a escribir en un campo, el navegador debe mostrar opciones para completar el campo, en función de los valores escritos anteriormente.</p>
+            <h5>Variaciones de uso</h5>
+            <ul>
+              <li><span class="text-success">on</span></li>
+              <li><span class="text-success">off</span></li>
+            </ul>
+            <p><b>Codigo:</b></p>
+            <p>
+              <code>
+              &lt;form autocomplete="on"&gt;<br>
+              telefono:&lt;input type="text" name="telefono" required&gt;<br>
+              &lt;input type="submit" value="Enviar"&gt;<br>
+              &lt;/form&gt;
+            </code>
+          </p>
+          <!--Codigo en funcionamiento-->
+          <p><b>Vista en el navegador:</b></p>
+          <form autocomplete="on">
+            telefono:<input type="text" name="telefono" required>
+            <input type="submit" value="Enviar">
+            </form> 
+            <br>
+          <!--Fin Codigo en funcionamiento--> 
+          <p><a href="#form">subir</a></p>
+          <hr>
+            <h3 id="enctype">enctype</h3>
+            <p><b>enctype</b> este atributo especifica cómo se deben codificar los datos del formulario al enviarlos al servidor.</p>
+            <p>enctype solo se puede usar si <span class="text-danger">method="post"</span>.</p>
+            <h5>Variaciones de uso</h5>
+            <ul>
+              <li><span class="text-success">application/x-www-form-urlencoded</span> Defecto. Todos los caracteres se codifican antes de enviarse (los espacios se convierten en símbolos "+" y los caracteres especiales se convierten en valores ASCII HEX).</li>
+              <li><span class="text-success">multipart/form-data</span> Este valor es necesario si el usuario cargará un archivo a través del formulario</li>
+              <li><span class="text-success">text/plain</span> Envía datos sin ningún tipo de codificación. <span class="text-danger">No recomendado</span> </li>
+            </ul>
+            <p><b>Codigo:</b></p>
+            <p>
+              <code>
+              &lt;form action="datos.php" enctype="multipart/form-data" method="post"&gt;<br>
+              correo:&lt;input type="email" name="correo" required&gt;<br>
+              avatar:&lt;input type="file" name="archivo"&gt;<br>
+              &lt;input type="submit" value="Enviar"&gt;<br>
+              &lt;/form&gt;
+            </code>
+          </p>
+          <!--Codigo en funcionamiento-->
+          <p><b>Vista en el navegador:</b></p>
+          <form action="datos.php" enctype="multipart/form-data" method="post">
+            correo:<input type="email" name="correo" required>
+            avatar:<input type="file" name="archivo">
+            <input type="submit" value="Enviar">
+            </form>
+            <br>
+          <!--Fin Codigo en funcionamiento--> 
+          <p><a href="#form">subir</a></p>
+          <hr>
+            <h3 id="method">method</h3>
+            <p><b>method</b> este atributo especifica cómo enviar datos de formulario (los datos de formulario se envían a la página especificada en el atributo <span class="text-danger">action</span>).</p>
+            <h5>Variaciones de uso</h5>
+            <ul>
+              <li>
+              <p><span class="text-success">get</span> recomendado solo para datos que no requieran seguridad.</p>
+              <p><b>Consideraciones</b></p>  
+              <p>Agrega datos de formulario a la URL en pares de nombre/valor.</p>
+              <p>La longitud de una URL es limitada (alrededor de 3000 caracteres).</p>
+              <p class="text-danger"><b>¡Nunca use GET para enviar datos confidenciales! (será visible en la URL).</b></p>
+              <p>Útil para envíos de formularios en los que un usuario desea marcar el resultado.</p>
+              <p>GET es mejor para datos no seguros, como cadenas de consulta en Google.</p>
+              </li>
+              <li>
+              <p><span class="text-success">post</span> recomendado para datos que requieran seguridad y resguardo de la información.</p>
+              <p><b>Consideraciones</b></p> 
+              <p>Agrega datos de formulario dentro del cuerpo de la solicitud HTTP (los datos no se muestran en la URL).</p> 
+              <p>No tiene limitaciones de tamaño.</p> 
+              <p>Los envíos de formularios con POST no se pueden marcar.</p> 
+              </li>
+            </ul>
+            <p><b>Codigo:</b></p>
+            <p>
+              <code>
+              &lt;form action="datos.php" method="get"&gt;<br>
+              correo:&lt;input type="email" name="correo" required&gt;<br>
+              clave:&lt;input type="password" name="clave" required&gt;<br>
+              &lt;input type="submit" value="Enviar"&gt;<br>
+              &lt;/form&gt;
+            </code>
+          </p>
+          <!--Codigo en funcionamiento-->
+          <p><b>Vista en el navegador:</b></p>
+          <form action="datos.php" method="get">
+            correo:<input type="email" name="correo" required>
+            clave:<input type="password" name="clave" required>
+            <input type="submit" value="Enviar">
+            </form>
+            <br>
+          <!--Fin Codigo en funcionamiento--> 
+          <p><a href="#form">subir</a></p>
+          <hr>
+            <h3 id="type">type</h3>
+            <p><b>type</b> este atributo especifica un nombre para un elemento HTML. en <b>&lt;form&gt;</b> se utiliza como referencia cuando se envían los datos.</p>
+            <p><b>Codigo:</b></p>
+            <p>
+              <code>
+              &lt;form action="datos.php" name="frmdatos" method="post"&gt;<br>
+              Nombre:&lt;input type="text" name="nombre" required&gt;<br>
+              Edad(años):&lt;input type="number" name="edad" required&gt;<br>
+              &lt;input type="submit" value="Enviar"&gt;<br>
+              &lt;/form&gt;
+            </code>
+          </p>
+          <!--Codigo en funcionamiento-->
+          <p><b>Vista en el navegador:</b></p>
+          <form action="datos.php" name="frmdatos" method="post">
+            Nombre:<input type="text" name="nombre" required>
+            Edad(años):<input type="number" name="edad" required>
+            <input type="submit" value="Enviar">
+            </form>
+            <br>
+          <!--Fin Codigo en funcionamiento--> 
+          <p><a href="#form">subir</a></p>
+          <hr>
+            <h3 id="novalidate">novalidate</h3>
+            <p>Cuando está presente, especifica que los datos del formulario no deben validarse cuando se envían.</p>
+            <p><b>Codigo:</b></p>
+            <p>
+              <code>
+              &lt;form action="datos.php" name="frmdatos" method="post" novalidate&gt;<br>
+              Nombre:&lt;input type="text" name="nombre" required&gt;<br>
+              Edad(años):&lt;input type="number" name="edad" required&gt;<br>
+              &lt;input type="submit" value="Enviar"&gt;<br>
+              &lt;/form&gt;
+            </code>
+          </p>
+          <!--Codigo en funcionamiento-->
+          <p><b>Vista en el navegador:</b></p>
+          <form action="datos.php" name="frmdatos" method="post" novalidate>
+            Nombre:<input type="text" name="nombre" required>
+            Edad(años):<input type="number" name="edad" required>
+            <input type="submit" value="Enviar">
+            </form>
+            <br>
+          <!--Fin Codigo en funcionamiento--> 
+          <p><a href="#form">subir</a></p>
+          <hr>
+            <h3 id="rel">rel</h3>
+            <p><b>rel</b> este atributo especifica la relación entre el documento actual y el documento vinculado.</p>
+            <h5>Variaciones de uso</h5>
+            <ul>
+              <li><span class="text-success">external</span>	especifica que el documento al que se hace referencia no forma parte del sitio actual.</li>
+              <li><span class="text-success">help</span> enlaces a un documento de ayuda.</li>
+              <li><span class="text-success">license</span>	enlaces a la información de derechos de autor del documento.</li>
+              <li><span class="text-success">next</span> el siguiente documento en una selección.</li>
+              <li><span class="text-success">nofollow</span>	es aquel que impide que fluya la popularidad (trafico) de la página origen del enlace hacia la página destino del enlace. Esto quiere decir que la página que recibe el enlace no se beneficia en absoluto de la popularidad ni credibilidad de la página origen del enlace.</li>
+              <li><span class="text-success">noopener</span> es un atributo HTML que impide que la página de apertura obtenga algún tipo de acceso a la página original.</li>
+              <li><span class="text-success">noreferrer</span>	este atributo evita pasar la información de referencia al sitio web de destino al eliminar la información de referencia del encabezado HTTP.</li>
+            </ul>
+            <p><b>Codigo:</b></p>
+            <p>
+              <code>
+              &lt;form action="datos.php" method="post" rel="noopener noreferrer"&gt;<br>
+              correo:&lt;input type="email" name="correo" required&gt;<br>
+              clave:&lt;input type="password" name="clave" required&gt;<br>
+              &lt;input type="submit" value="Enviar"&gt;<br>
+              &lt;/form&gt;
+            </code>
+          </p>
+          <!--Codigo en funcionamiento-->
+          <p><b>Vista en el navegador:</b></p>
+          <form action="datos.php" method="post" rel="noopener noreferrer">
+            correo:<input type="email" name="correo" required>
+            clave:<input type="password" name="clave" required>
+            <input type="submit" value="Enviar">
+            </form>
+            <br>
+          <!--Fin Codigo en funcionamiento--> 
+          <p><a href="#form">subir</a></p>
+          <hr>
+        </div>
+        <div class="col-12 mt-5 mb-5">
+        <a class="btn btn-primary" href="index.html" target="_self">volver</a>
+    </div>
+      </div>
+</div>
+      <!-- Bootstrap core JavaScript-->
+
+    <script src="./bootstrap/jquery/jquery-3.6.0.slim.min.js"></script>
+    <script src="./bootstrap/bootstrap/js/bootstrap.min.js"></script>
+    <script text="javascript">
+      function msg() {
+        alert('presionaste el boton');
+      }
+    </script>
+</body>
+</html>

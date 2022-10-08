@@ -1,0 +1,118 @@
+<!-- 
+Programa de Aprendizaje de HTML5.
+Desarrollador: Elvis Gamboa Machado @gamboamej
+Licencia: Licencia GNU GPL (Licencia Pública General de GNU).
+Empresa: Pratapo, C.A
+Hecho con amor en Venezuela.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Bootstrap core CSS -->
+      <link href="./bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <title>a HTML</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="./img/HTML5Logo.svg" width="30" height="30" alt="">
+    </a>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">indice <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div id="inicio" class="container">
+    <div class="row mt-5 mb-5">
+      <div class="col-md-4 offset-md-4">
+        <img src="./img/HTML5Logo.svg" alt="HTML5">
+      </div>
+    </div>
+    <div class="row mt-5 mb-5">
+        <div class="col-12">
+            <p><b>&lt;a&gt;texto&lt;/a&gt;</b></p>
+            <p>Es una etiqueta que nos ayuda a poder crear un enlace a una página web. El atributo principal de la etiqueta HTML es href, donde pondremos el enlace al que queremos conectar. Otro atributo muy usado es target, el cual nos sirve para indicar si el enlace se abrirá en una nueva ventana o en la misma.</p>
+            <p><b>Uso:</b></p>
+            <p><code>&lt;a&gt;texto&lt;/a&gt;</code></p>
+            <p><b>Atributos:</b></p>
+            <p class="text-success">href | target | rel | hreflang | media | type</p>
+            <p><b>Etiqueta de Cierre: </b> <span class="text-danger">Requerida.</span></p>
+            <p><b>Posicion:</b> Dentro de la etiqueta <b>&lt;body&gt;</b></p>
+            <h2>Atributos</h2>
+            <h3>href</h3>
+            <p><b>href</b> este atributo se utiliza para hacer referencia a otro documento. Puede encontrarlo en etiquetas de enlace (link) y etiquetas de anclaje. Sin embargo, los valores de la URL pueden ser diferentes dependiendo de lo que esté apuntando.</p>
+            <p><b>Enlace a otro documento</b></p>
+            <p><code>&lt;a href="index.html"&gt;inicio&lt;/a&gt;</code></p>
+            <p><a href="index.html">inicio</a></p>
+            <p><b>Enlace al mismo documento hacia un ancla.</b></p>
+            <p><code>&lt;a href="#inicio"&gt;inicio&lt;/a&gt;</code></p>
+            <p><a href="#inicio">inicio</a></p>
+            <h3>target</h3>
+            <p><b>Target</b> Este atributo se añade en los enlaces en una página para que al momento de hacer clic sobre ellos éstos abran en una nueva pestaña o no en la misma el documento que es llamado. El enlace target blank se utiliza para evitar que el usuario salga de la página donde está.</p>
+            <h5>Variaciones de uso</h5>
+            <ul>
+              <li><b>_blank</b></li>
+              <li><b>_parent</b></li>
+              <li><b> _self</b></li>
+              <li><b> _top</b></li>
+            </ul>
+            <p><b>Enlace a otro documento en la misma pestaña</b></p>
+            <p><code>&lt;a href="index.html" target="_self" &gt;inicio&lt;/a&gt;</code></p>
+            <p><a href="index.html" target="_self">inicio</a></p>
+            <p><b>Enlace a otro documento en una nueva pestaña</b></p>
+            <p><code>&lt;a href="index.html" target="_blank" &gt;inicio&lt;/a&gt;</code></p>
+            <p><a href="index.html" target="_blank">inicio</a></p>
+            <h3>rel</h3>
+            <p><b>rel</b> es un atributo obligatorio que especifica la relación entre el documento subyacente y el documento vinculado. El valor "alternate" indica al motor de búsqueda que el documento externo contiene una versión alternativa de la web.</p>
+            <h5>Variaciones de uso</h5>
+            <ul>
+              <li><b>alternate</b></li>
+              <li><b>author</b></li>
+              <li><b>bookmark</b></li>
+              <li><b>external</b></li>
+              <li><b>help</b></li>
+              <li><b>license</b></li>
+              <li><b>next</b></li>
+              <li><b>nofollow</b></li>
+              <li><b>noreferrer</b></li>
+              <li><b>noopener</b></li>
+              <li><b>prev</b></li>
+              <li><b>search</b></li>
+              <li><b>tag</b></li>
+            </ul>
+            <p><code>&lt;a href="index.html" target="_blank" rel="alternate"&gt;inicio&lt;/a&gt;</code></p>
+            <p><a href="index.html" target="_blank" rel="alternate">inicio</a></p>
+            <h3>hreflang</h3>
+            <p><b>hreflang</b> es un atributo que describe el idioma en el que está escrito el documento vinculado y, opcionalmente, también puede identificar el país para el que es particularmente relevante. Como valores se utilizan los códigos regionales y de idioma de acuerdo con las normas ISO 639-1 y 3166-1.</p>
+            <p><code>&lt;a href="index.html" target="_blank" rel="alternate" hreflang="es-VE"&gt;inicio&lt;/a&gt;</code></p>
+            <p><a href="index.html" target="_blank" rel="alternate" hreflang="es-VE">inicio</a></p>
+            <h3>media</h3>
+            <p></p>
+            <p><code>&lt;a href="index.html" target="_blank" rel="alternate" type="text/html"&gt;inicio&lt;/a&gt;</code></p>
+            <p><a href="index.html" target="_blank" rel="alternate" hreflang="es-VE" type="text/html">inicio</a></p>
+            <h3>type</h3>
+            <p></p>
+            <p><code>&lt;a href="index.html" target="_blank" rel="alternate" type="text/html" media="print and (resolution:300dpi)"&gt;inicio&lt;/a&gt;</code></p>
+            <p><a href="index.html" target="_blank" rel="alternate" hreflang="es-VE" type="text/html" media="print and (resolution:300dpi)">inicio</a></p>
+        </div>
+        <div class="col-12 mt-5 mb-5">
+        <a class="btn btn-primary" href="index.html" target="_self">volver</a>
+    </div>
+      </div>
+</div>
+      <!-- Bootstrap core JavaScript-->
+    <script src="./bootstrap/jquery/jquery-3.6.0.slim.min.js"></script>
+    <script src="./bootstrap/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
